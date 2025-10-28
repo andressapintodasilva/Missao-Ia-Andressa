@@ -98,7 +98,6 @@ function mostraAlternativas() {
     }
 }
 
-
 function respostaSelecionada(opcaoSelecionada) {
     const afirmacoes = opcaoSelecionada.afirmacoes;
     historiaFinal += afirmacoes + " ";
@@ -106,9 +105,10 @@ function respostaSelecionada(opcaoSelecionada) {
     mostraPergunta();
 }
 
-
 function mostraResultado() {
     caixaPerguntas.textContent = "Se fosse possivel";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
+
+mostraPergunta();
