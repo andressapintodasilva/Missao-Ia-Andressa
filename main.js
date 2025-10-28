@@ -85,7 +85,7 @@ function mostraPergunta() {
     }
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
-    caixaAlternativas.textContent = "";
+    caixaAlternativas.textContent = " ";
     mostraAlternativas();
 }
 
@@ -97,9 +97,7 @@ function mostraAlternativas() {
         caixaAlternativas.appendChild(botaoAlternativas);
     }
 }
-let resposta
 
-mostraPergunta();
 
 function respostaSelecionada(opcaoSelecionada) {
     const afirmacoes = opcaoSelecionada.afirmacoes;
@@ -108,7 +106,6 @@ function respostaSelecionada(opcaoSelecionada) {
     mostraPergunta();
 }
 
-mostraPergunta();
 
 function mostraResultado() {
     caixaPerguntas.textContent = "Se fosse possivel";
